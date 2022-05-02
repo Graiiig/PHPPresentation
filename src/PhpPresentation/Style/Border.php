@@ -48,9 +48,8 @@ class Border implements ComparableInterface
     /**
      * Line width.
      *
-     * @var int
      */
-    private $lineWidth = 1;
+    private $lineWidth = 0.25;
 
     /**
      * Line style.
@@ -88,9 +87,8 @@ class Border implements ComparableInterface
     /**
      * Get line width (in points).
      *
-     * @return int
      */
-    public function getLineWidth(): int
+    public function getLineWidth():
     {
         return $this->lineWidth;
     }
@@ -98,11 +96,10 @@ class Border implements ComparableInterface
     /**
      * Set line width (in points).
      *
-     * @param int $pValue
      *
      * @return self
      */
-    public function setLineWidth(int $pValue = 1): self
+    public function setLineWidth($pValue = 0.25): self
     {
         $this->lineWidth = $pValue;
 
