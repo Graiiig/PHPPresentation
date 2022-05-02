@@ -72,7 +72,6 @@ class Paragraph implements ComparableInterface
     private $lineSpacingMode = self::LINE_SPACING_MODE_PERCENT;
 
     /**
-     * @var int
      */
     private $spacingBefore = 0;
 
@@ -350,9 +349,8 @@ class Paragraph implements ComparableInterface
     /**
      * Value in points
      *
-     * @return int
      */
-    public function getSpacingBefore(): int
+    public function getSpacingBefore():
     {
         return $this->spacingBefore;
     }
@@ -360,11 +358,10 @@ class Paragraph implements ComparableInterface
     /**
      * Value in points
      *
-     * @param int $spacingBefore
      *
      * @return self
      */
-    public function setSpacingBefore(int $spacingBefore): self
+    public function setSpacingBefore($spacingBefore): self
     {
         $this->spacingBefore = $spacingBefore;
 
