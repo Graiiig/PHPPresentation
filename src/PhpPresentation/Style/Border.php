@@ -88,7 +88,7 @@ class Border implements ComparableInterface
      * Get line width (in points).
      *
      */
-    public function getLineWidth():
+    public function getLineWidth()
     {
         return $this->lineWidth;
     }
