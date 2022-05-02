@@ -193,7 +193,7 @@ class Paragraph implements ComparableInterface
      * Create text run (can be formatted).
      *
      * @param string $pText Text
-     */72:53
+     */
     public function createTextRun(string $pText = ''): Run
     {
         $objText = new Run($pText);
