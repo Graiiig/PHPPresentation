@@ -174,6 +174,16 @@ class PhpPresentation
 
         return $slide;
     }
+    
+    /**
+     * Add slide at specifc index.
+     */
+    public function addSlideIndex(Slide $slide, int $index): Slide
+    {
+		array_splice( $this->slideCollection, $index, 0, [$slide]);
+        
+		return $slide;
+    }
 
     /**
      * Remove slide by index.
